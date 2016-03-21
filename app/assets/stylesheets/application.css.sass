@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC)
+
+$background_color: #F06543
+$font_color: #E8E9EB
+$button_color: #313638
+$border_color: #F09D51
+$highlight_color: #E0DFD5
+
+body
+  background-color: $background_color
+  color: $font_color
+
+a
+  color: $font_color !important
+
+h1
+  color: $font_color !important
+
+.textarea
+  border-radius: 2px !important
+  color: black !important
+  width: 100%
+  max-width: 100%
+  min-width: 100%
+  height: 256px
+
+.navbar-default
+  background-color: rgba( 0,0,0,0 )
+  border-color: rgba( 0,0,0,0 )
+  color: $font_color !important
+
+.label-info
+  background-color: $button_color !important
+  margin: 4px !important
+
+.navbar-brand
+  font-size: 32px
+  font-family: 'Bowlby One SC', sans-serif
+  color: black
+  -webkit-text-fill-color: white
+  -webkit-text-stroke-width: 2.5px
+  -webkit-text-stroke-color: black
+
+.btn-primary
+  color: $font_color !important
+  background-color: $button_color !important
+  border-color: $font_color !important
+
+.btn-primary:hover
+  color: $border_color !important
+  background-color: $border_color
+  border-color: $border_color !important
+
+.signup
+  color: black !important
+  font-weight: bold
+
+.largetextfield
+  color: black !important
+  border-radius: 2px
+  width: 100%
+  height: 24px
+  margin: 4px
+
+.textfield
+  color: black !important
+  border-radius: 2px
+  margin: 4px
+
+.question
+  margin-top: 6px
+  margin-bottom: 6px
+  border-radius: 4px
+  background-color: $button_color !important
+
+.question:hover
+  background-color: $border_color !important
+
+.glyph
+  color: $background_color
+
+.glyphdark
+  color: $button_color

@@ -1,0 +1,12 @@
+
+<div class="col-xs-6 col-xs-offset-3">
+  <h1>Ask a question</h1>
+  <%= form_for @overflow do |f| %>
+    <%= f.label :question, "Title", class: "label label-info" %> <br \>
+    <%= f.text_field :question, class: "largetextfield" %>
+    <%= f.text_area :content, :class => "textarea" %>
+    <%= f.label :tags, "Tags - separate by comma", class: "label label-info" %> <br \>
+    <%= f.text_field :tags, class: "largetextfield" %>
+    <%= f.submit "Ask Question", class: "btn btn-primary" %>
+  <%end%>
+</div>

@@ -1,0 +1,8 @@
+
+<div class="col-xs-6 col-xs-offset-3">
+  <%= form_for [@question, @answer] do |a| %>
+    <%= a.label :content, "Answer", class: "label label-info" %> <br \>
+    <%= a.text_area :content, class: "textarea" %>
+    <%= a.submit "Submit", class: "btn btn-primary" %>
+  <%end%>
+</div>
