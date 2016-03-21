@@ -6,6 +6,14 @@
 <div class="col-xs-6">
   <h1><%= @question.question %></h1>
   <p> <%= @question.content %> </p>
+  <hr>
+  <p>Answers: </p>
+  <% @question.answers.each do |a| %>
+  <div class="smallanswer">
+    <p><%= a.content %></p>
+    <p>By: <%= a.owner %></p>
+  </div>
+  <%end%>
 </div>
 
 <div class="col-xs-12">

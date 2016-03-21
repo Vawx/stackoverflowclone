@@ -14,7 +14,6 @@ class QuestionsController < ApplicationController
     @question.votes = 0
     @question.views = 0
     @question.owner = current_user.email
-    binding.pry
     if @question.save
       redirect_to questions_path
     else
